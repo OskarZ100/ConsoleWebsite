@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Ancizar+Sans:ital,wght@0,100..1000;1,100..1000&family=Share+Tech+Mono&family=Varela+Round&display=swap');
+:root{
+    --main-bkg: rgba(31, 31, 31, 0.8);
+    --main-lcl: rgba(255, 137, 31, 0.8);
+    --main-usr: rgba(0, 254, 24, 0.8);
+    --main-txt: rgba(255, 222, 181, 1);
+    --main-hglt: white;
+
+
+    --light-bkg: rgba(255, 255, 255, 1);
+    --light-lcl: rgba(0, 39, 255, 1);
+    --light-usr: rgba(255, 0, 209, 1);
+    --light-txt: rgba(72, 75, 75, 1);
+
+    --hot-bkg: rgba(80, 33, 0, 1);
+    --hot-lcl: rgb(255, 249, 66);
+    --hot-usr: rgb(255, 0, 0);
+    --hot-txt: rgb(235, 192, 0);
+
+    --cool-bkg: rgba(40, 48, 90, 1);
+    --cool-lcl: rgba(0, 255, 184, 1);
+    --cool-usr: rgba(255, 157, 0, 1);
+    --cool-txt: rgba(202, 237, 232, 1);
+}
+
+.terminal-line p{
+    font-family: "Share Tech Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+pre{
+    color:var(--main-txt);
+}
+
+
+body{
+    background-color: var(--main-bkg);
+}
+
+.terminal-line{
+    margin-left: 2em;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 0;
+    padding: 0;
+    display: flex;
+}
+
+
+
+.commands{
+    margin-left: 2em;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 0;
+    padding: 0;
+    color: var(--main-txt);
+    
+}
+
+.commands p{
+    font-family: "Share Tech Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.terminal-line p:hover{
+    background-color: rgba(56, 56, 56, 0.611);
+}
+
+#user{
+    color: var(--main-usr);
+}
+
+#prompt{
+    color: var(--main-txt);
+    margin-left: 5px;
+}
+
+#lcl{
+    color: var(--main-lcl);
+}
+
+#leInput{
+    margin-left: 3em;
+}
+
+#unclicked{
+    color: var(--main-txt);
+    margin-left: 2.3em;
+    font-family: "Share Tech Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#unclicked:hover{
+    cursor: pointer;
+    background-color: rgba(56, 56, 56, 0.611);
+}
+
+#clicked{
+    color: var(--main-txt);
+    margin-left: 2.3em;
+    font-family: "Share Tech Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+    animation: clicked-prompt 3s ease-in-out infinite;
+}
+
+#typing{
+    display: flex;
+}
+
+.commands img:hover{
+    cursor: pointer;
+    filter: drop-shadow(0 0 0.75rem var(--main-hglt));
+}
+
+.commands img{
+    transition: ease-in-out 0.5s;
+    margin-right: 2em;
+}
+
+@keyframes clicked-prompt {
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+input, textarea{
+    background-color: var(--main-bkg);
+}
+
+input{
+    color: var(--main-txt);
+    border: hidden;
+    width: 50%;
+}
