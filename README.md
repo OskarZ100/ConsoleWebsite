@@ -12,4 +12,8 @@ Obviously i need to work on my css and making my coding a much neater, and I wil
 Although I really like this neat little website I dont think it would work that well as a proffesional portfolio so 
 I plan on making a new one when I can improve my css and styling skills
 
+
+##RUN INSTRUCTIONS
+make sure you have some sort of IDE to run this on and then download the files and try to run it locally on your computer
+should run smoothly only issues i could think of would be sizing issues with various screen sizes but it was made for fun
 # HOPE YOU ENJOY THE SITE
